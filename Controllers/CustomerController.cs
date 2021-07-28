@@ -13,6 +13,11 @@ namespace EcommerceApp_Practice.Controllers
         {
             return View();
         }
+        public IActionResult create()
+        {
+            return View();
+        }
+        [HttpPost]
         public IActionResult create(Customer customer) 
         {
             return View();
