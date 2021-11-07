@@ -22,11 +22,22 @@ namespace EcommerceApp_Practice.Controllers
         public IActionResult create(Customer customer) 
         {
             if (customer.Name!=null) {
-                CustomerDbContext db = new CustomerDbContext();
+                EcommerceDbContext db = new EcommerceDbContext();
                 db.Customers.Add(customer);
-                db.SaveChanges();
+                bool isSaved = db.SaveChanges()>0;
+                if (isSaved)
+                {
+                    return RedirectToAction("List");
+                }
             }
             return View();
+        }
+        public IActionResult List()
+        {
+            EcommerceDbContext db = new EcommerceDbContext();
+            List<Customer> customers = db.Customers.ToList();
+
+            return View(customers);
         }
     }
 }

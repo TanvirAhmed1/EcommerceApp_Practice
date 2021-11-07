@@ -2,7 +2,7 @@
 
 namespace EcommerceApp_Practice.Migrations
 {
-    public partial class Initial_Migration : Migration
+    public partial class InitialMigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

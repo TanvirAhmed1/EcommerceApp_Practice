@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace EcommerceApp_Practice.Database
 {
-    public class CustomerDbContext:DbContext
+    public class EcommerceDbContext:DbContext
     {
         public DbSet<Customer> Customers { get; set; }
 
