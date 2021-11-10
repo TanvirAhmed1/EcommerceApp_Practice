@@ -39,5 +39,30 @@ namespace EcommerceApp_Practice.Controllers
 
             return View(customers);
         }
+        public IActionResult Edit(int? id)
+        {
+            EcommerceDbContext db = new EcommerceDbContext();
+            if (id !=null && id>0) {
+                Customer existingCustomer = db.Customers.Find(id);
+                if (existingCustomer != null)
+                {
+                    return View(existingCustomer);
+                }
+            }
+
+            return View();
+        }
+        [HttpPost]
+        public IActionResult Edit(Customer customer)
+        {
+            EcommerceDbContext db = new EcommerceDbContext();
+            db.Entry(customer).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+            bool isUpdate = db.SaveChanges() > 0;
+            if (isUpdate)
+            {
+                return RedirectToAction("List");
+            }
+            return View(customer);
+        }
     }
 }
