@@ -151,3 +151,4 @@ C:\Users\tanvi\Desktop\.Net Practice\EcommerceApp_Practice\bin\Debug\netcoreapp3
 C:\Users\tanvi\Desktop\.Net Practice\EcommerceApp_Practice\obj\Debug\netcoreapp3.1\EcommerceApp_Practice.csproj.CoreCompileInputs.cache
 C:\Users\tanvi\Desktop\.Net Practice\EcommerceApp_Practice\obj\Debug\netcoreapp3.1\EcommerceApp_Practice.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\tanvi\Desktop\.Net Practice\EcommerceApp_Practice\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_SBAdminLayout.cshtml.g.cs
+C:\Users\tanvi\Desktop\.Net Practice\EcommerceApp_Practice\obj\Debug\netcoreapp3.1\Razor\Views\Shared\PartialViews\Customer\_CustomerList.cshtml.g.cs

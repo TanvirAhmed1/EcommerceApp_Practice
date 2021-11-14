@@ -10,19 +10,22 @@ namespace EcommerceApp_Practice.Controllers
 {
     public class CustomerController : Controller
     {
+        EcommerceDbContext db = new EcommerceDbContext();
         public IActionResult Index()
         {
             return View();
         }
         public IActionResult create()
         {
-            return View();
+            Customer customer = new Customer();
+            customer.ExistingCustomers = db.Customers.ToList();
+            return View(customer);
         }
         [HttpPost]
         public IActionResult create(Customer customer) 
         {
             if (customer.Name!=null) {
-                EcommerceDbContext db = new EcommerceDbContext();
+                //EcommerceDbContext db = new EcommerceDbContext();
                 db.Customers.Add(customer);
                 bool isSaved = db.SaveChanges()>0;
                 if (isSaved)
@@ -34,14 +37,14 @@ namespace EcommerceApp_Practice.Controllers
         }
         public IActionResult List()
         {
-            EcommerceDbContext db = new EcommerceDbContext();
+            //EcommerceDbContext db = new EcommerceDbContext();
             List<Customer> customers = db.Customers.ToList();
 
             return View(customers);
         }
         public IActionResult Edit(int? id)
         {
-            EcommerceDbContext db = new EcommerceDbContext();
+            
             if (id !=null && id>0) {
                 Customer existingCustomer = db.Customers.Find(id);
                 if (existingCustomer != null)
@@ -55,7 +58,7 @@ namespace EcommerceApp_Practice.Controllers
         [HttpPost]
         public IActionResult Edit(Customer customer)
         {
-            EcommerceDbContext db = new EcommerceDbContext();
+            
             db.Entry(customer).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
             bool isUpdate = db.SaveChanges() > 0;
             if (isUpdate)
