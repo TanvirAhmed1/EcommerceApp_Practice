@@ -24,10 +24,11 @@ namespace EcommerceApp_Practice.Controllers
         [HttpPost]
         public IActionResult create(Customer customer) 
         {
-            if (customer.Name!=null) {
+            if (ModelState.IsValid)
+            {
                 //EcommerceDbContext db = new EcommerceDbContext();
                 db.Customers.Add(customer);
-                bool isSaved = db.SaveChanges()>0;
+                bool isSaved = db.SaveChanges() > 0;
                 if (isSaved)
                 {
                     return RedirectToAction("List");
@@ -35,6 +36,7 @@ namespace EcommerceApp_Practice.Controllers
             }
             return View();
         }
+            
         public IActionResult List()
         {
             //EcommerceDbContext db = new EcommerceDbContext();
