@@ -1,0 +1,15 @@
+C:\Users\tanvi\Desktop\New folder (11)\Ecommerce.Database\bin\Debug\netcoreapp3.1\Ecommerce.Database.deps.json
+C:\Users\tanvi\Desktop\New folder (11)\Ecommerce.Database\bin\Debug\netcoreapp3.1\Ecommerce.Database.runtimeconfig.json
+C:\Users\tanvi\Desktop\New folder (11)\Ecommerce.Database\bin\Debug\netcoreapp3.1\Ecommerce.Database.runtimeconfig.dev.json
+C:\Users\tanvi\Desktop\New folder (11)\Ecommerce.Database\bin\Debug\netcoreapp3.1\Ecommerce.Database.dll
+C:\Users\tanvi\Desktop\New folder (11)\Ecommerce.Database\bin\Debug\netcoreapp3.1\Ecommerce.Database.pdb
+C:\Users\tanvi\Desktop\New folder (11)\Ecommerce.Database\bin\Debug\netcoreapp3.1\Ecommerce.Models.dll
+C:\Users\tanvi\Desktop\New folder (11)\Ecommerce.Database\bin\Debug\netcoreapp3.1\Ecommerce.Models.pdb
+C:\Users\tanvi\Desktop\New folder (11)\Ecommerce.Database\obj\Debug\netcoreapp3.1\Ecommerce.Database.csprojAssemblyReference.cache
+C:\Users\tanvi\Desktop\New folder (11)\Ecommerce.Database\obj\Debug\netcoreapp3.1\Ecommerce.Database.AssemblyInfoInputs.cache
+C:\Users\tanvi\Desktop\New folder (11)\Ecommerce.Database\obj\Debug\netcoreapp3.1\Ecommerce.Database.AssemblyInfo.cs
+C:\Users\tanvi\Desktop\New folder (11)\Ecommerce.Database\obj\Debug\netcoreapp3.1\Ecommerce.Database.csproj.CoreCompileInputs.cache
+C:\Users\tanvi\Desktop\New folder (11)\Ecommerce.Database\obj\Debug\netcoreapp3.1\Ecommerce.Database.csproj.CopyComplete
+C:\Users\tanvi\Desktop\New folder (11)\Ecommerce.Database\obj\Debug\netcoreapp3.1\Ecommerce.Database.dll
+C:\Users\tanvi\Desktop\New folder (11)\Ecommerce.Database\obj\Debug\netcoreapp3.1\Ecommerce.Database.pdb
+C:\Users\tanvi\Desktop\New folder (11)\Ecommerce.Database\obj\Debug\netcoreapp3.1\Ecommerce.Database.genruntimeconfig.cache

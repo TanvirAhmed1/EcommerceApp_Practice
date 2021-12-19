@@ -2574,6 +2574,58 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "Ecommerce.BLL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Ecommerce.Models": "1.0.0",
+          "Ecommerce.Repositories": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Ecommerce.BLL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Ecommerce.BLL.dll": {}
+        }
+      },
+      "Ecommerce.Database/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Ecommerce.Models": "1.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "3.1.10"
+        },
+        "compile": {
+          "bin/placeholder/Ecommerce.Database.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Ecommerce.Database.dll": {}
+        }
+      },
+      "Ecommerce.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Ecommerce.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Ecommerce.Models.dll": {}
+        }
+      },
+      "Ecommerce.Repositories/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Ecommerce.Database": "1.0.0",
+          "Ecommerce.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Ecommerce.Repositories.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Ecommerce.Repositories.dll": {}
+        }
       }
     }
   },
@@ -8463,10 +8515,32 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "Ecommerce.BLL/1.0.0": {
+      "type": "project",
+      "path": "../Ecommerce.BLL/Ecommerce.BLL.csproj",
+      "msbuildProject": "../Ecommerce.BLL/Ecommerce.BLL.csproj"
+    },
+    "Ecommerce.Database/1.0.0": {
+      "type": "project",
+      "path": "../Ecommerce.Database/Ecommerce.Database.csproj",
+      "msbuildProject": "../Ecommerce.Database/Ecommerce.Database.csproj"
+    },
+    "Ecommerce.Models/1.0.0": {
+      "type": "project",
+      "path": "../Ecommerce.Models/Ecommerce.Models.csproj",
+      "msbuildProject": "../Ecommerce.Models/Ecommerce.Models.csproj"
+    },
+    "Ecommerce.Repositories/1.0.0": {
+      "type": "project",
+      "path": "../Ecommerce.Repositories/Ecommerce.Repositories.csproj",
+      "msbuildProject": "../Ecommerce.Repositories/Ecommerce.Repositories.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "Ecommerce.BLL >= 1.0.0",
+      "Ecommerce.Models >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 3.1.10",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.10",
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.10",
@@ -8503,7 +8577,14 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\tanvi\\Desktop\\New folder (11)\\Ecommerce.BLL\\Ecommerce.BLL.csproj": {
+              "projectPath": "C:\\Users\\tanvi\\Desktop\\New folder (11)\\Ecommerce.BLL\\Ecommerce.BLL.csproj"
+            },
+            "C:\\Users\\tanvi\\Desktop\\New folder (11)\\Ecommerce.Models\\Ecommerce.Models.csproj": {
+              "projectPath": "C:\\Users\\tanvi\\Desktop\\New folder (11)\\Ecommerce.Models\\Ecommerce.Models.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

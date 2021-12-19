@@ -2,15 +2,20 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using EcommerceApp_Practice.Database;
-using EcommerceApp_Practice.Models;
+using Ecommerce.BLL;
+using Ecommerce.Database.Database;
+using Ecommerce.Models.EntityModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EcommerceApp_Practice.Controllers
 {
     public class CustomerController : Controller
     {
-        EcommerceDbContext db = new EcommerceDbContext();
+        CustomerManager _customerManager;
+        public CustomerController()
+        {
+            _customerManager = new CustomerManager();
+        }
         public IActionResult Index()
         {
             return View();
@@ -18,7 +23,7 @@ namespace EcommerceApp_Practice.Controllers
         public IActionResult create()
         {
             Customer customer = new Customer();
-            customer.ExistingCustomers = db.Customers.ToList();
+            customer.CustomerList = _customerManager.GetAll();
             return View(customer);
         }
         [HttpPost]
@@ -26,9 +31,7 @@ namespace EcommerceApp_Practice.Controllers
         {
             if (ModelState.IsValid)
             {
-                //EcommerceDbContext db = new EcommerceDbContext();
-                db.Customers.Add(customer);
-                bool isSaved = db.SaveChanges() > 0;
+                bool isSaved = _customerManager.Add(customer);
                 if (isSaved)
                 {
                     return RedirectToAction("List");
@@ -39,8 +42,8 @@ namespace EcommerceApp_Practice.Controllers
             
         public IActionResult List()
         {
-            //EcommerceDbContext db = new EcommerceDbContext();
-            List<Customer> customers = db.Customers.ToList();
+            
+            ICollection<Customer> customers = _customerManager.GetAll();
 
             return View(customers);
         }
@@ -48,7 +51,7 @@ namespace EcommerceApp_Practice.Controllers
         {
             
             if (id !=null && id>0) {
-                Customer existingCustomer = db.Customers.Find(id);
+                Customer existingCustomer = _customerManager.GetById(id);
                 if (existingCustomer != null)
                 {
                     return View(existingCustomer);
@@ -60,14 +63,25 @@ namespace EcommerceApp_Practice.Controllers
         [HttpPost]
         public IActionResult Edit(Customer customer)
         {
-            
-            db.Entry(customer).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
-            bool isUpdate = db.SaveChanges() > 0;
+            bool isUpdate = _customerManager.Update(customer);
             if (isUpdate)
             {
                 return RedirectToAction("List");
             }
             return View(customer);
+        }
+        public IActionResult Delete(int? id)
+        {
+            if(id!=null && id > 0)
+            {
+                var customer = _customerManager.GetById(id);
+                bool isSaved = _customerManager.Remove(customer);
+                if (isSaved)
+                {
+                    return RedirectToAction("List");
+                }
+            }
+            return RedirectToAction("List");
         }
     }
 }

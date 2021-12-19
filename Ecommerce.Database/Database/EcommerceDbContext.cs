@@ -1,19 +1,19 @@
-﻿using EcommerceApp_Practice.Models;
+﻿using Ecommerce.Models.EntityModels;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace EcommerceApp_Practice.Database
+namespace Ecommerce.Database.Database
 {
-    public class EcommerceDbContext:DbContext
+    public class EcommerceDbContext : DbContext
     {
         public DbSet<Customer> Customers { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            string connectionString = "Server=(local); Database=EcommerceBD7; Integrated Security=true";
+            string connectionString = "Server=(local); Database=EcommerceBD8; Integrated Security=true";
             optionsBuilder.UseSqlServer(connectionString);
             base.OnConfiguring(optionsBuilder);
         }

@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace EcommerceApp_Practice.Models
+namespace Ecommerce.Models.EntityModels
 {
     public class Customer
     {
@@ -14,7 +14,8 @@ namespace EcommerceApp_Practice.Models
         public string Name { get; set; }
         public string Phone { get; set; }
         public string Address { get; set; }
+        public bool IsDeleted { get; set; }
         [NotMapped]
-        public List<Customer> ExistingCustomers { get; set; }
+        public ICollection<Customer> CustomerList { get; set; }
     }
 }
