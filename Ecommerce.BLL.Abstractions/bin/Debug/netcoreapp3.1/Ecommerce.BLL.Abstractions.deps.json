@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Ecommerce.BLL.Abstractions/1.0.0": {
+        "dependencies": {
+          "Ecommerce.Models": "1.0.0"
+        },
+        "runtime": {
+          "Ecommerce.BLL.Abstractions.dll": {}
+        }
+      },
+      "Ecommerce.Models/1.0.0": {
+        "runtime": {
+          "Ecommerce.Models.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Ecommerce.BLL.Abstractions/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Ecommerce.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

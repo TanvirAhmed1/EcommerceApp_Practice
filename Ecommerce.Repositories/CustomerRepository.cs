@@ -1,5 +1,6 @@
 ﻿using Ecommerce.Database.Database;
 using Ecommerce.Models.EntityModels;
+using Ecommerce.Repositories.Abstractions;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -8,12 +9,12 @@ using System.Text;
 
 namespace Ecommerce.Repositories
 {
-    public class CustomerRepository
+    public class CustomerRepository:ICustomerRepository
     {
         EcommerceDbContext db;
-        public CustomerRepository()
+        public CustomerRepository(DbContext dbContext)
         {
-            db = new EcommerceDbContext();
+            db = (EcommerceDbContext)dbContext;
         }
         public bool Add(Customer entity)
         {

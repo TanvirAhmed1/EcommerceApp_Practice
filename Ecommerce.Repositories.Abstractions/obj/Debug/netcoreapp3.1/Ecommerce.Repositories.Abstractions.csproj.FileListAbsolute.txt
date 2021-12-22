@@ -1,0 +1,12 @@
+C:\Users\tanvi\Desktop\New folder (11)\Ecommerce.Repositories.Abstractions\bin\Debug\netcoreapp3.1\Ecommerce.Repositories.Abstractions.deps.json
+C:\Users\tanvi\Desktop\New folder (11)\Ecommerce.Repositories.Abstractions\bin\Debug\netcoreapp3.1\Ecommerce.Repositories.Abstractions.dll
+C:\Users\tanvi\Desktop\New folder (11)\Ecommerce.Repositories.Abstractions\bin\Debug\netcoreapp3.1\Ecommerce.Repositories.Abstractions.pdb
+C:\Users\tanvi\Desktop\New folder (11)\Ecommerce.Repositories.Abstractions\bin\Debug\netcoreapp3.1\Ecommerce.Models.dll
+C:\Users\tanvi\Desktop\New folder (11)\Ecommerce.Repositories.Abstractions\bin\Debug\netcoreapp3.1\Ecommerce.Models.pdb
+C:\Users\tanvi\Desktop\New folder (11)\Ecommerce.Repositories.Abstractions\obj\Debug\netcoreapp3.1\Ecommerce.Repositories.Abstractions.csprojAssemblyReference.cache
+C:\Users\tanvi\Desktop\New folder (11)\Ecommerce.Repositories.Abstractions\obj\Debug\netcoreapp3.1\Ecommerce.Repositories.Abstractions.AssemblyInfoInputs.cache
+C:\Users\tanvi\Desktop\New folder (11)\Ecommerce.Repositories.Abstractions\obj\Debug\netcoreapp3.1\Ecommerce.Repositories.Abstractions.AssemblyInfo.cs
+C:\Users\tanvi\Desktop\New folder (11)\Ecommerce.Repositories.Abstractions\obj\Debug\netcoreapp3.1\Ecommerce.Repositories.Abstractions.csproj.CoreCompileInputs.cache
+C:\Users\tanvi\Desktop\New folder (11)\Ecommerce.Repositories.Abstractions\obj\Debug\netcoreapp3.1\Ecommerce.Repositories.Abstractions.csproj.CopyComplete
+C:\Users\tanvi\Desktop\New folder (11)\Ecommerce.Repositories.Abstractions\obj\Debug\netcoreapp3.1\Ecommerce.Repositories.Abstractions.dll
+C:\Users\tanvi\Desktop\New folder (11)\Ecommerce.Repositories.Abstractions\obj\Debug\netcoreapp3.1\Ecommerce.Repositories.Abstractions.pdb

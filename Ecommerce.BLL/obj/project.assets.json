@@ -1468,6 +1468,19 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "Ecommerce.BLL.Abstractions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Ecommerce.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Ecommerce.BLL.Abstractions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Ecommerce.BLL.Abstractions.dll": {}
+        }
+      },
       "Ecommerce.Database/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -1497,13 +1510,27 @@
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
           "Ecommerce.Database": "1.0.0",
-          "Ecommerce.Models": "1.0.0"
+          "Ecommerce.Models": "1.0.0",
+          "Ecommerce.Repositories.Abstractions": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Ecommerce.Repositories.dll": {}
         },
         "runtime": {
           "bin/placeholder/Ecommerce.Repositories.dll": {}
+        }
+      },
+      "Ecommerce.Repositories.Abstractions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Ecommerce.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Ecommerce.Repositories.Abstractions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Ecommerce.Repositories.Abstractions.dll": {}
         }
       }
     }
@@ -5681,6 +5708,11 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
+    "Ecommerce.BLL.Abstractions/1.0.0": {
+      "type": "project",
+      "path": "../Ecommerce.BLL.Abstractions/Ecommerce.BLL.Abstractions.csproj",
+      "msbuildProject": "../Ecommerce.BLL.Abstractions/Ecommerce.BLL.Abstractions.csproj"
+    },
     "Ecommerce.Database/1.0.0": {
       "type": "project",
       "path": "../Ecommerce.Database/Ecommerce.Database.csproj",
@@ -5695,10 +5727,16 @@
       "type": "project",
       "path": "../Ecommerce.Repositories/Ecommerce.Repositories.csproj",
       "msbuildProject": "../Ecommerce.Repositories/Ecommerce.Repositories.csproj"
+    },
+    "Ecommerce.Repositories.Abstractions/1.0.0": {
+      "type": "project",
+      "path": "../Ecommerce.Repositories.Abstractions/Ecommerce.Repositories.Abstractions.csproj",
+      "msbuildProject": "../Ecommerce.Repositories.Abstractions/Ecommerce.Repositories.Abstractions.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "Ecommerce.BLL.Abstractions >= 1.0.0",
       "Ecommerce.Models >= 1.0.0",
       "Ecommerce.Repositories >= 1.0.0"
     ]
@@ -5734,6 +5772,9 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
+            "C:\\Users\\tanvi\\Desktop\\New folder (11)\\Ecommerce.BLL.Abstractions\\Ecommerce.BLL.Abstractions.csproj": {
+              "projectPath": "C:\\Users\\tanvi\\Desktop\\New folder (11)\\Ecommerce.BLL.Abstractions\\Ecommerce.BLL.Abstractions.csproj"
+            },
             "C:\\Users\\tanvi\\Desktop\\New folder (11)\\Ecommerce.Models\\Ecommerce.Models.csproj": {
               "projectPath": "C:\\Users\\tanvi\\Desktop\\New folder (11)\\Ecommerce.Models\\Ecommerce.Models.csproj"
             },

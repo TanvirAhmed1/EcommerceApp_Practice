@@ -1,0 +1,12 @@
+C:\Users\tanvi\Desktop\New folder (11)\Ecommerce.BLL.Abstractions\bin\Debug\netcoreapp3.1\Ecommerce.BLL.Abstractions.deps.json
+C:\Users\tanvi\Desktop\New folder (11)\Ecommerce.BLL.Abstractions\bin\Debug\netcoreapp3.1\Ecommerce.BLL.Abstractions.dll
+C:\Users\tanvi\Desktop\New folder (11)\Ecommerce.BLL.Abstractions\bin\Debug\netcoreapp3.1\Ecommerce.BLL.Abstractions.pdb
+C:\Users\tanvi\Desktop\New folder (11)\Ecommerce.BLL.Abstractions\bin\Debug\netcoreapp3.1\Ecommerce.Models.dll
+C:\Users\tanvi\Desktop\New folder (11)\Ecommerce.BLL.Abstractions\bin\Debug\netcoreapp3.1\Ecommerce.Models.pdb
+C:\Users\tanvi\Desktop\New folder (11)\Ecommerce.BLL.Abstractions\obj\Debug\netcoreapp3.1\Ecommerce.BLL.Abstractions.csprojAssemblyReference.cache
+C:\Users\tanvi\Desktop\New folder (11)\Ecommerce.BLL.Abstractions\obj\Debug\netcoreapp3.1\Ecommerce.BLL.Abstractions.AssemblyInfoInputs.cache
+C:\Users\tanvi\Desktop\New folder (11)\Ecommerce.BLL.Abstractions\obj\Debug\netcoreapp3.1\Ecommerce.BLL.Abstractions.AssemblyInfo.cs
+C:\Users\tanvi\Desktop\New folder (11)\Ecommerce.BLL.Abstractions\obj\Debug\netcoreapp3.1\Ecommerce.BLL.Abstractions.csproj.CoreCompileInputs.cache
+C:\Users\tanvi\Desktop\New folder (11)\Ecommerce.BLL.Abstractions\obj\Debug\netcoreapp3.1\Ecommerce.BLL.Abstractions.csproj.CopyComplete
+C:\Users\tanvi\Desktop\New folder (11)\Ecommerce.BLL.Abstractions\obj\Debug\netcoreapp3.1\Ecommerce.BLL.Abstractions.dll
+C:\Users\tanvi\Desktop\New folder (11)\Ecommerce.BLL.Abstractions\obj\Debug\netcoreapp3.1\Ecommerce.BLL.Abstractions.pdb

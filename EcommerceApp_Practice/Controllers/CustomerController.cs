@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Ecommerce.BLL;
+using Ecommerce.BLL.Abstractions;
 using Ecommerce.Database.Database;
 using Ecommerce.Models.EntityModels;
 using Microsoft.AspNetCore.Mvc;
@@ -11,10 +12,10 @@ namespace EcommerceApp_Practice.Controllers
 {
     public class CustomerController : Controller
     {
-        CustomerManager _customerManager;
-        public CustomerController()
+        ICustomerManager _customerManager;
+        public CustomerController(ICustomerManager customerManager)
         {
-            _customerManager = new CustomerManager();
+            _customerManager = customerManager;
         }
         public IActionResult Index()
         {

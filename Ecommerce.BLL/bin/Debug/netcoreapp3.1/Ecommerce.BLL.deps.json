@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v3.1": {
       "Ecommerce.BLL/1.0.0": {
         "dependencies": {
+          "Ecommerce.BLL.Abstractions": "1.0.0",
           "Ecommerce.Models": "1.0.0",
           "Ecommerce.Repositories": "1.0.0"
         },
@@ -1015,6 +1016,14 @@
           "System.Xml.XmlDocument": "4.3.0"
         }
       },
+      "Ecommerce.BLL.Abstractions/1.0.0": {
+        "dependencies": {
+          "Ecommerce.Models": "1.0.0"
+        },
+        "runtime": {
+          "Ecommerce.BLL.Abstractions.dll": {}
+        }
+      },
       "Ecommerce.Database/1.0.0": {
         "dependencies": {
           "Ecommerce.Models": "1.0.0",
@@ -1032,10 +1041,19 @@
       "Ecommerce.Repositories/1.0.0": {
         "dependencies": {
           "Ecommerce.Database": "1.0.0",
-          "Ecommerce.Models": "1.0.0"
+          "Ecommerce.Models": "1.0.0",
+          "Ecommerce.Repositories.Abstractions": "1.0.0"
         },
         "runtime": {
           "Ecommerce.Repositories.dll": {}
+        }
+      },
+      "Ecommerce.Repositories.Abstractions/1.0.0": {
+        "dependencies": {
+          "Ecommerce.Models": "1.0.0"
+        },
+        "runtime": {
+          "Ecommerce.Repositories.Abstractions.dll": {}
         }
       }
     }
@@ -1732,6 +1750,11 @@
       "path": "system.xml.xmlserializer/4.3.0",
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
     },
+    "Ecommerce.BLL.Abstractions/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Ecommerce.Database/1.0.0": {
       "type": "project",
       "serviceable": false,
@@ -1743,6 +1766,11 @@
       "sha512": ""
     },
     "Ecommerce.Repositories/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Ecommerce.Repositories.Abstractions/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

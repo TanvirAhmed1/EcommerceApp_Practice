@@ -1491,6 +1491,19 @@
         "runtime": {
           "bin/placeholder/Ecommerce.Models.dll": {}
         }
+      },
+      "Ecommerce.Repositories.Abstractions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Ecommerce.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Ecommerce.Repositories.Abstractions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Ecommerce.Repositories.Abstractions.dll": {}
+        }
       }
     }
   },
@@ -5676,12 +5689,18 @@
       "type": "project",
       "path": "../Ecommerce.Models/Ecommerce.Models.csproj",
       "msbuildProject": "../Ecommerce.Models/Ecommerce.Models.csproj"
+    },
+    "Ecommerce.Repositories.Abstractions/1.0.0": {
+      "type": "project",
+      "path": "../Ecommerce.Repositories.Abstractions/Ecommerce.Repositories.Abstractions.csproj",
+      "msbuildProject": "../Ecommerce.Repositories.Abstractions/Ecommerce.Repositories.Abstractions.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Ecommerce.Database >= 1.0.0",
-      "Ecommerce.Models >= 1.0.0"
+      "Ecommerce.Models >= 1.0.0",
+      "Ecommerce.Repositories.Abstractions >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5720,6 +5739,9 @@
             },
             "C:\\Users\\tanvi\\Desktop\\New folder (11)\\Ecommerce.Models\\Ecommerce.Models.csproj": {
               "projectPath": "C:\\Users\\tanvi\\Desktop\\New folder (11)\\Ecommerce.Models\\Ecommerce.Models.csproj"
+            },
+            "C:\\Users\\tanvi\\Desktop\\New folder (11)\\Ecommerce.Repositories.Abstractions\\Ecommerce.Repositories.Abstractions.csproj": {
+              "projectPath": "C:\\Users\\tanvi\\Desktop\\New folder (11)\\Ecommerce.Repositories.Abstractions\\Ecommerce.Repositories.Abstractions.csproj"
             }
           }
         }

@@ -1,17 +1,19 @@
-﻿using Ecommerce.Models.EntityModels;
+﻿using Ecommerce.BLL.Abstractions;
+using Ecommerce.Models.EntityModels;
 using Ecommerce.Repositories;
+using Ecommerce.Repositories.Abstractions;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Ecommerce.BLL
 {
-    public class CustomerManager
+    public class CustomerManager:ICustomerManager
     {
-        CustomerRepository _customerRepo;
-        public CustomerManager()
+        ICustomerRepository _customerRepo;
+        public CustomerManager(ICustomerRepository customerRepository)
         {
-            _customerRepo = new CustomerRepository();
+            _customerRepo = customerRepository;
         }
         public bool Add(Customer entry)
         {

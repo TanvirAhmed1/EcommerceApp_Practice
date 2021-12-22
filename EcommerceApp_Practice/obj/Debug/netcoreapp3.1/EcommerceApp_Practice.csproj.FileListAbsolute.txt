@@ -314,3 +314,7 @@ C:\Users\tanvi\Desktop\New folder (11)\EcommerceApp_Practice\obj\Debug\netcoreap
 C:\Users\tanvi\Desktop\New folder (11)\EcommerceApp_Practice\obj\Debug\netcoreapp3.1\staticwebassets\EcommerceApp_Practice.StaticWebAssets.Manifest.cache
 C:\Users\tanvi\Desktop\New folder (11)\EcommerceApp_Practice\obj\Debug\netcoreapp3.1\staticwebassets\EcommerceApp_Practice.StaticWebAssets.xml
 C:\Users\tanvi\Desktop\New folder (11)\EcommerceApp_Practice\obj\Debug\netcoreapp3.1\EcommerceApp_Practice.genruntimeconfig.cache
+C:\Users\tanvi\Desktop\New folder (11)\EcommerceApp_Practice\bin\Debug\netcoreapp3.1\Ecommerce.BLL.Abstractions.dll
+C:\Users\tanvi\Desktop\New folder (11)\EcommerceApp_Practice\bin\Debug\netcoreapp3.1\Ecommerce.Repositories.Abstractions.dll
+C:\Users\tanvi\Desktop\New folder (11)\EcommerceApp_Practice\bin\Debug\netcoreapp3.1\Ecommerce.BLL.Abstractions.pdb
+C:\Users\tanvi\Desktop\New folder (11)\EcommerceApp_Practice\bin\Debug\netcoreapp3.1\Ecommerce.Repositories.Abstractions.pdb

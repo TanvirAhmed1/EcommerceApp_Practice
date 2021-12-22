@@ -2203,6 +2203,7 @@
       },
       "Ecommerce.BLL/1.0.0": {
         "dependencies": {
+          "Ecommerce.BLL.Abstractions": "1.0.0",
           "Ecommerce.Models": "1.0.0",
           "Ecommerce.Repositories": "1.0.0"
         },
@@ -2211,6 +2212,17 @@
         },
         "compile": {
           "Ecommerce.BLL.dll": {}
+        }
+      },
+      "Ecommerce.BLL.Abstractions/1.0.0": {
+        "dependencies": {
+          "Ecommerce.Models": "1.0.0"
+        },
+        "runtime": {
+          "Ecommerce.BLL.Abstractions.dll": {}
+        },
+        "compile": {
+          "Ecommerce.BLL.Abstractions.dll": {}
         }
       },
       "Ecommerce.Database/1.0.0": {
@@ -2236,13 +2248,25 @@
       "Ecommerce.Repositories/1.0.0": {
         "dependencies": {
           "Ecommerce.Database": "1.0.0",
-          "Ecommerce.Models": "1.0.0"
+          "Ecommerce.Models": "1.0.0",
+          "Ecommerce.Repositories.Abstractions": "1.0.0"
         },
         "runtime": {
           "Ecommerce.Repositories.dll": {}
         },
         "compile": {
           "Ecommerce.Repositories.dll": {}
+        }
+      },
+      "Ecommerce.Repositories.Abstractions/1.0.0": {
+        "dependencies": {
+          "Ecommerce.Models": "1.0.0"
+        },
+        "runtime": {
+          "Ecommerce.Repositories.Abstractions.dll": {}
+        },
+        "compile": {
+          "Ecommerce.Repositories.Abstractions.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
@@ -4985,6 +5009,11 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Ecommerce.BLL.Abstractions/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Ecommerce.Database/1.0.0": {
       "type": "project",
       "serviceable": false,
@@ -4996,6 +5025,11 @@
       "sha512": ""
     },
     "Ecommerce.Repositories/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Ecommerce.Repositories.Abstractions/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

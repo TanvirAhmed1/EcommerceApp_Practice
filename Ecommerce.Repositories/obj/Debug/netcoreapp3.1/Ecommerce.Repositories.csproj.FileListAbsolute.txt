@@ -12,3 +12,5 @@ C:\Users\tanvi\Desktop\New folder (11)\Ecommerce.Repositories\obj\Debug\netcorea
 C:\Users\tanvi\Desktop\New folder (11)\Ecommerce.Repositories\obj\Debug\netcoreapp3.1\Ecommerce.Repositories.csproj.CopyComplete
 C:\Users\tanvi\Desktop\New folder (11)\Ecommerce.Repositories\obj\Debug\netcoreapp3.1\Ecommerce.Repositories.dll
 C:\Users\tanvi\Desktop\New folder (11)\Ecommerce.Repositories\obj\Debug\netcoreapp3.1\Ecommerce.Repositories.pdb
+C:\Users\tanvi\Desktop\New folder (11)\Ecommerce.Repositories\bin\Debug\netcoreapp3.1\Ecommerce.Repositories.Abstractions.dll
+C:\Users\tanvi\Desktop\New folder (11)\Ecommerce.Repositories\bin\Debug\netcoreapp3.1\Ecommerce.Repositories.Abstractions.pdb
