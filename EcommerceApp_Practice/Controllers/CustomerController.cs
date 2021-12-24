@@ -2,10 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using Ecommerce.BLL;
 using Ecommerce.BLL.Abstractions;
 using Ecommerce.Database.Database;
 using Ecommerce.Models.EntityModels;
+using Ecommerce.Models.ResponseModels;
+using EcommerceApp_Practice.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EcommerceApp_Practice.Controllers
@@ -13,9 +16,11 @@ namespace EcommerceApp_Practice.Controllers
     public class CustomerController : Controller
     {
         ICustomerManager _customerManager;
-        public CustomerController(ICustomerManager customerManager)
+        IMapper _mapper;
+        public CustomerController(ICustomerManager customerManager, IMapper mapper)
         {
             _customerManager = customerManager;
+            _mapper = mapper;
         }
         public IActionResult Index()
         {
@@ -23,15 +28,16 @@ namespace EcommerceApp_Practice.Controllers
         }
         public IActionResult create()
         {
-            Customer customer = new Customer();
-            customer.CustomerList = _customerManager.GetAll();
+            CustomerCreateViewModel customer = new CustomerCreateViewModel();
+            customer.CustomerList = _customerManager.GetAll().Select(c=> _mapper.Map<CustomerResponseModel>(c)).ToList();
             return View(customer);
         }
         [HttpPost]
-        public IActionResult create(Customer customer) 
+        public IActionResult create(CustomerCreateViewModel model) 
         {
             if (ModelState.IsValid)
             {
+                Customer customer = _mapper.Map<Customer>(model);
                 bool isSaved = _customerManager.Add(customer);
                 if (isSaved)
                 {

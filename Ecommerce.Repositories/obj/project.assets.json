@@ -1496,7 +1496,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
-          "Ecommerce.Models": "1.0.0"
+          "Ecommerce.Models": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "3.1.0"
         },
         "compile": {
           "bin/placeholder/Ecommerce.Repositories.Abstractions.dll": {}

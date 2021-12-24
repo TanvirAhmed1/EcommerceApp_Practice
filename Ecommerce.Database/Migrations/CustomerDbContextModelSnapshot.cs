@@ -42,6 +42,27 @@ namespace EcommerceApp_Practice.Migrations
 
                     b.ToTable("Customers");
                 });
+
+            modelBuilder.Entity("Ecommerce.Models.EntityModels.Product", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Code")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<double>("Price")
+                        .HasColumnType("float");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Products");
+                });
 #pragma warning restore 612, 618
         }
     }

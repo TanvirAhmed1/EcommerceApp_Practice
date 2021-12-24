@@ -318,3 +318,5 @@ C:\Users\tanvi\Desktop\New folder (11)\EcommerceApp_Practice\bin\Debug\netcoreap
 C:\Users\tanvi\Desktop\New folder (11)\EcommerceApp_Practice\bin\Debug\netcoreapp3.1\Ecommerce.Repositories.Abstractions.dll
 C:\Users\tanvi\Desktop\New folder (11)\EcommerceApp_Practice\bin\Debug\netcoreapp3.1\Ecommerce.BLL.Abstractions.pdb
 C:\Users\tanvi\Desktop\New folder (11)\EcommerceApp_Practice\bin\Debug\netcoreapp3.1\Ecommerce.Repositories.Abstractions.pdb
+C:\Users\tanvi\Desktop\New folder (11)\EcommerceApp_Practice\bin\Debug\netcoreapp3.1\AutoMapper.dll
+C:\Users\tanvi\Desktop\New folder (11)\EcommerceApp_Practice\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
