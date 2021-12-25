@@ -10,17 +10,20 @@ using Ecommerce.Models.EntityModels;
 using Ecommerce.Models.ResponseModels;
 using EcommerceApp_Practice.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace EcommerceApp_Practice.Controllers
 {
     public class CustomerController : Controller
     {
         ICustomerManager _customerManager;
+        ICustomerTypeManager _customerTypeManager;
         IMapper _mapper;
-        public CustomerController(ICustomerManager customerManager, IMapper mapper)
+        public CustomerController(ICustomerManager customerManager, IMapper mapper, ICustomerTypeManager customerTypeManager)
         {
             _customerManager = customerManager;
             _mapper = mapper;
+            _customerTypeManager = customerTypeManager;
         }
         public IActionResult Index()
         {
@@ -30,6 +33,11 @@ namespace EcommerceApp_Practice.Controllers
         {
             CustomerCreateViewModel customer = new CustomerCreateViewModel();
             customer.CustomerList = _customerManager.GetAll().Select(c=> _mapper.Map<CustomerResponseModel>(c)).ToList();
+            customer.CustomerTypeItems = _customerTypeManager.GetAll()
+                .Select(c => new SelectListItem() {
+                    Text = c.Name,
+                    Value = c.Id.ToString()
+                }).ToList();
             return View(customer);
         }
         [HttpPost]
@@ -56,16 +64,24 @@ namespace EcommerceApp_Practice.Controllers
         }
         public IActionResult Edit(int? id)
         {
-            
+            var model = new CustomerEditViewModel();
+            model.CustomerTypeItems = _customerTypeManager.GetAll()
+                .Select(c => new SelectListItem()
+                {
+                    Text = c.Name,
+                    Value = c.Id.ToString()
+                }).ToList();
+
             if (id !=null && id>0) {
                 Customer existingCustomer = _customerManager.GetById(id);
                 if (existingCustomer != null)
                 {
-                    return View(existingCustomer);
+                    _mapper.Map<Customer, CustomerEditViewModel>(existingCustomer,model);
                 }
             }
+            
 
-            return View();
+            return View(model);
         }
         [HttpPost]
         public IActionResult Edit(Customer customer)

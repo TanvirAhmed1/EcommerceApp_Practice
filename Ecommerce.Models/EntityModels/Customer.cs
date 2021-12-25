@@ -16,6 +16,8 @@ namespace Ecommerce.Models.EntityModels
         public string Phone { get; set; }
         public string Address { get; set; }
         public bool IsDeleted { get; set; }
+        public int CustomerTypeId { get; set; }
+        public virtual CustomerType CustomerType { get; set; }
 
         public bool Delete()
         {

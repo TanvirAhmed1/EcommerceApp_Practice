@@ -32,6 +32,8 @@ namespace EcommerceApp_Practice
             services.AddControllersWithViews();
             services.AddTransient<ICustomerManager, CustomerManager>();
             services.AddTransient<ICustomerRepository, CustomerRepository>();
+            services.AddTransient<ICustomerTypeManager, CustomerTypeManager>();
+            services.AddTransient<ICustomerTypeRepository, CustomerTypeRepository>();
             services.AddTransient<DbContext, EcommerceDbContext>();
             services.AddAutoMapper(typeof(Startup).Assembly);
         }

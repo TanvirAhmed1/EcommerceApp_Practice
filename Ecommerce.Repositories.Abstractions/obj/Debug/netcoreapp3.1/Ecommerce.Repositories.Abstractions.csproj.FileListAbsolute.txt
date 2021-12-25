@@ -9,3 +9,4 @@ C:\Users\tanvi\Desktop\New folder (11)\Ecommerce.Repositories.Abstractions\obj\D
 C:\Users\tanvi\Desktop\New folder (11)\Ecommerce.Repositories.Abstractions\obj\Debug\netcoreapp3.1\Ecommerce.Repositories.Abstractions.csproj.CopyComplete
 C:\Users\tanvi\Desktop\New folder (11)\Ecommerce.Repositories.Abstractions\obj\Debug\netcoreapp3.1\Ecommerce.Repositories.Abstractions.dll
 C:\Users\tanvi\Desktop\New folder (11)\Ecommerce.Repositories.Abstractions\obj\Debug\netcoreapp3.1\Ecommerce.Repositories.Abstractions.pdb
+C:\Users\tanvi\Desktop\New folder (11)\Ecommerce.Repositories.Abstractions\obj\Debug\netcoreapp3.1\Ecommerce.Repositories.Abstractions.csproj.CoreCompileInputs.cache

@@ -11,10 +11,12 @@ namespace Ecommerce.Database.Database
     {
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Product> Products { get; set; }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<CustomerType> CustomerType { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            string connectionString = "Server=(local); Database=EcommerceBD8; Integrated Security=true";
+            string connectionString = "Server=(local); Database=EcommerceBD9; Integrated Security=true";
             optionsBuilder.UseSqlServer(connectionString);
             base.OnConfiguring(optionsBuilder);
         }
