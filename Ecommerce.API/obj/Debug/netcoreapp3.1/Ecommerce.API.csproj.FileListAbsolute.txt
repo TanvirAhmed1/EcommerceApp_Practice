@@ -88,3 +88,5 @@ C:\Users\tanvi\Desktop\New folder (11)\Ecommerce.API\obj\Debug\netcoreapp3.1\sta
 C:\Users\tanvi\Desktop\New folder (11)\Ecommerce.API\obj\Debug\netcoreapp3.1\Ecommerce.API.dll
 C:\Users\tanvi\Desktop\New folder (11)\Ecommerce.API\obj\Debug\netcoreapp3.1\Ecommerce.API.pdb
 C:\Users\tanvi\Desktop\New folder (11)\Ecommerce.API\obj\Debug\netcoreapp3.1\Ecommerce.API.genruntimeconfig.cache
+C:\Users\tanvi\Desktop\New folder (11)\Ecommerce.API\bin\Debug\netcoreapp3.1\AutoMapper.dll
+C:\Users\tanvi\Desktop\New folder (11)\Ecommerce.API\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
