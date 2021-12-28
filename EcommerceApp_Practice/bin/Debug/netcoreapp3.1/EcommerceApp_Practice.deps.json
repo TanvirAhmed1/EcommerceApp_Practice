@@ -25,7 +25,8 @@
       "EcommerceApp_Practice/1.0.0": {
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "8.1.1",
-          "Ecommerce.BLL": "1.0.0",
+          "Ecommerce.BLL.Abstractions": "1.0.0",
+          "Ecommerce.Configuration": "1.0.0",
           "Ecommerce.Models": "1.0.0",
           "Microsoft.EntityFrameworkCore.Design": "3.1.10",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.10",
@@ -2247,6 +2248,18 @@
         },
         "compile": {
           "Ecommerce.BLL.Abstractions.dll": {}
+        }
+      },
+      "Ecommerce.Configuration/1.0.0": {
+        "dependencies": {
+          "Ecommerce.BLL": "1.0.0",
+          "Ecommerce.BLL.Abstractions": "1.0.0"
+        },
+        "runtime": {
+          "Ecommerce.Configuration.dll": {}
+        },
+        "compile": {
+          "Ecommerce.Configuration.dll": {}
         }
       },
       "Ecommerce.Database/1.0.0": {
@@ -5049,6 +5062,11 @@
       "sha512": ""
     },
     "Ecommerce.BLL.Abstractions/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Ecommerce.Configuration/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

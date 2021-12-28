@@ -130,6 +130,69 @@
         }
       }
     },
+    "C:\\Users\\tanvi\\Desktop\\New folder (11)\\Ecommerce.Configuration\\Ecommerce.Configuration.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\tanvi\\Desktop\\New folder (11)\\Ecommerce.Configuration\\Ecommerce.Configuration.csproj",
+        "projectName": "Ecommerce.Configuration",
+        "projectPath": "C:\\Users\\tanvi\\Desktop\\New folder (11)\\Ecommerce.Configuration\\Ecommerce.Configuration.csproj",
+        "packagesPath": "C:\\Users\\tanvi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tanvi\\Desktop\\New folder (11)\\Ecommerce.Configuration\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\tanvi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://nuget.episerver.com/feed/packages.svc/": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\tanvi\\Desktop\\New folder (11)\\Ecommerce.BLL.Abstractions\\Ecommerce.BLL.Abstractions.csproj": {
+                "projectPath": "C:\\Users\\tanvi\\Desktop\\New folder (11)\\Ecommerce.BLL.Abstractions\\Ecommerce.BLL.Abstractions.csproj"
+              },
+              "C:\\Users\\tanvi\\Desktop\\New folder (11)\\Ecommerce.BLL\\Ecommerce.BLL.csproj": {
+                "projectPath": "C:\\Users\\tanvi\\Desktop\\New folder (11)\\Ecommerce.BLL\\Ecommerce.BLL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\tanvi\\Desktop\\New folder (11)\\Ecommerce.Database\\Ecommerce.Database.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -423,8 +486,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\tanvi\\Desktop\\New folder (11)\\Ecommerce.BLL\\Ecommerce.BLL.csproj": {
-                "projectPath": "C:\\Users\\tanvi\\Desktop\\New folder (11)\\Ecommerce.BLL\\Ecommerce.BLL.csproj"
+              "C:\\Users\\tanvi\\Desktop\\New folder (11)\\Ecommerce.BLL.Abstractions\\Ecommerce.BLL.Abstractions.csproj": {
+                "projectPath": "C:\\Users\\tanvi\\Desktop\\New folder (11)\\Ecommerce.BLL.Abstractions\\Ecommerce.BLL.Abstractions.csproj"
+              },
+              "C:\\Users\\tanvi\\Desktop\\New folder (11)\\Ecommerce.Configuration\\Ecommerce.Configuration.csproj": {
+                "projectPath": "C:\\Users\\tanvi\\Desktop\\New folder (11)\\Ecommerce.Configuration\\Ecommerce.Configuration.csproj"
               },
               "C:\\Users\\tanvi\\Desktop\\New folder (11)\\Ecommerce.Models\\Ecommerce.Models.csproj": {
                 "projectPath": "C:\\Users\\tanvi\\Desktop\\New folder (11)\\Ecommerce.Models\\Ecommerce.Models.csproj"

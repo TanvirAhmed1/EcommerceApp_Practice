@@ -2623,6 +2623,20 @@
           "bin/placeholder/Ecommerce.BLL.Abstractions.dll": {}
         }
       },
+      "Ecommerce.Configuration/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Ecommerce.BLL": "1.0.0",
+          "Ecommerce.BLL.Abstractions": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Ecommerce.Configuration.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Ecommerce.Configuration.dll": {}
+        }
+      },
       "Ecommerce.Database/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -8622,6 +8636,11 @@
       "path": "../Ecommerce.BLL.Abstractions/Ecommerce.BLL.Abstractions.csproj",
       "msbuildProject": "../Ecommerce.BLL.Abstractions/Ecommerce.BLL.Abstractions.csproj"
     },
+    "Ecommerce.Configuration/1.0.0": {
+      "type": "project",
+      "path": "../Ecommerce.Configuration/Ecommerce.Configuration.csproj",
+      "msbuildProject": "../Ecommerce.Configuration/Ecommerce.Configuration.csproj"
+    },
     "Ecommerce.Database/1.0.0": {
       "type": "project",
       "path": "../Ecommerce.Database/Ecommerce.Database.csproj",
@@ -8646,7 +8665,8 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 8.1.1",
-      "Ecommerce.BLL >= 1.0.0",
+      "Ecommerce.BLL.Abstractions >= 1.0.0",
+      "Ecommerce.Configuration >= 1.0.0",
       "Ecommerce.Models >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 3.1.10",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.10",
@@ -8685,8 +8705,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\tanvi\\Desktop\\New folder (11)\\Ecommerce.BLL\\Ecommerce.BLL.csproj": {
-              "projectPath": "C:\\Users\\tanvi\\Desktop\\New folder (11)\\Ecommerce.BLL\\Ecommerce.BLL.csproj"
+            "C:\\Users\\tanvi\\Desktop\\New folder (11)\\Ecommerce.BLL.Abstractions\\Ecommerce.BLL.Abstractions.csproj": {
+              "projectPath": "C:\\Users\\tanvi\\Desktop\\New folder (11)\\Ecommerce.BLL.Abstractions\\Ecommerce.BLL.Abstractions.csproj"
+            },
+            "C:\\Users\\tanvi\\Desktop\\New folder (11)\\Ecommerce.Configuration\\Ecommerce.Configuration.csproj": {
+              "projectPath": "C:\\Users\\tanvi\\Desktop\\New folder (11)\\Ecommerce.Configuration\\Ecommerce.Configuration.csproj"
             },
             "C:\\Users\\tanvi\\Desktop\\New folder (11)\\Ecommerce.Models\\Ecommerce.Models.csproj": {
               "projectPath": "C:\\Users\\tanvi\\Desktop\\New folder (11)\\Ecommerce.Models\\Ecommerce.Models.csproj"

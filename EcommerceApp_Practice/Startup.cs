@@ -30,12 +30,9 @@ namespace EcommerceApp_Practice
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddTransient<ICustomerManager, CustomerManager>();
-            services.AddTransient<ICustomerRepository, CustomerRepository>();
-            services.AddTransient<ICustomerTypeManager, CustomerTypeManager>();
-            services.AddTransient<ICustomerTypeRepository, CustomerTypeRepository>();
-            services.AddTransient<DbContext, EcommerceDbContext>();
+            Ecommerce.Configuration.ConfigureService.Configure(services);
             services.AddAutoMapper(typeof(Startup).Assembly);
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

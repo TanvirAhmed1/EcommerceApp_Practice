@@ -1,5 +1,6 @@
 ﻿using Ecommerce.BLL.Abstractions;
 using Ecommerce.Models.EntityModels;
+using Ecommerce.Models.RequestModels;
 using Ecommerce.Repositories;
 using Ecommerce.Repositories.Abstractions;
 using System;
@@ -8,7 +9,7 @@ using System.Text;
 
 namespace Ecommerce.BLL
 {
-    public class CustomerManager:ICustomerManager
+    public class CustomerManager : ICustomerManager
     {
         ICustomerRepository _customerRepo;
         public CustomerManager(ICustomerRepository customerRepository)
@@ -39,6 +40,11 @@ namespace Ecommerce.BLL
         public Customer GetById(int? id)
         {
             return _customerRepo.GetById(id);
+        }
+
+        public ICollection<Customer> GetByRequest(CustomerRequestModel customer)
+        {
+            return _customerRepo.GetByRequest(customer);
         }
     }
 }

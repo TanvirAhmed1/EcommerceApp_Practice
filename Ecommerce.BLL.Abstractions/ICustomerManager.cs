@@ -1,4 +1,5 @@
 ﻿using Ecommerce.Models.EntityModels;
+using Ecommerce.Models.RequestModels;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -12,5 +13,6 @@ namespace Ecommerce.BLL.Abstractions
         bool Remove(Customer entity);
         ICollection<Customer> GetAll();
         Customer GetById(int? id);
+        ICollection<Customer> GetByRequest(CustomerRequestModel customer);
     }
 }
